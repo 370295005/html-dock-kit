@@ -1,0 +1,30 @@
+[
+  {
+    "source": "complex.html",
+    "library": "html-docx-kit@0.1.0",
+    "filename": "complex-new.docx",
+    "bytes": 15605,
+    "page": "Letter portrait, 1440-twip content margins"
+  },
+  {
+    "source": "complex.html",
+    "library": "html-docx-js@0.3.1",
+    "filename": "complex-old.docx",
+    "bytes": 56623,
+    "page": "Letter portrait, 1440-twip content margins"
+  },
+  {
+    "source": "boundary.html",
+    "library": "html-docx-kit@0.1.0",
+    "filename": "boundary-new.docx",
+    "bytes": 8492,
+    "page": "Letter portrait, 1440-twip content margins"
+  },
+  {
+    "source": "boundary.html",
+    "library": "html-docx-js@0.3.1",
+    "filename": "boundary-old.docx",
+    "bytes": 11133,
+    "page": "Letter portrait, 1440-twip content margins"
+  }
+]

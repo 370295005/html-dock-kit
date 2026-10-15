@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.tgz
+*.zip
+*.docx
+*.pdf
+~$*
+.DS_Store
+__pycache__/
+*.py[cod]
+examples/complex-export/results/structural-audit.json

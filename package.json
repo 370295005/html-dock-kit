@@ -1,0 +1,78 @@
+{
+  "name": "html-docx-kit",
+  "version": "0.1.1",
+  "description": "Convert HTML and inline images to Word DOCX in Node.js and browsers using altChunk.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/370295005/html-dock-kit.git"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "unpkg": "./dist/html-docx-kit.global.js",
+  "jsdelivr": "./dist/html-docx-kit.global.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./node": {
+      "import": {
+        "types": "./dist/node.d.ts",
+        "default": "./dist/node.js"
+      },
+      "require": {
+        "types": "./dist/node.d.cts",
+        "default": "./dist/node.cjs"
+      }
+    },
+    "./browser": "./dist/html-docx-kit.global.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.txt"
+  ],
+  "sideEffects": [
+    "./dist/html-docx-kit.global.js"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "license": "MIT",
+  "keywords": [
+    "html",
+    "docx",
+    "word",
+    "altchunk",
+    "typescript"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "example": "node examples/node.mjs",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "@xmldom/xmldom": "0.9.12",
+    "cheerio": "1.0.0",
+    "esbuild": "0.28.2",
+    "fflate": "0.8.3",
+    "juice": "11.1.1",
+    "parse5": "8.0.1",
+    "parse5-htmlparser2-tree-adapter": "8.0.0",
+    "typescript": "7.0.2"
+  }
+}

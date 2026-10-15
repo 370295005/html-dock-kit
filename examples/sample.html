@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>HTML 导出示例</title>
+  <style>
+    body { font-family: Arial, "Microsoft YaHei", sans-serif; font-size: 11pt; color: #283446; }
+    h1 { font-size: 24pt; color: #245da8; }
+    h2 { font-size: 15pt; color: #245da8; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #bac8da; padding: 8px; text-align: left; }
+    th { background-color: #e8f0fa; }
+  </style>
+</head>
+<body>
+  <h1>HTML → Word 导出示例</h1>
+  <p>这是一份由 <strong>html-docx-kit</strong> 生成的文档，展示中文、样式、列表、表格和嵌入图片。</p>
+  <h2>本次交付</h2>
+  <ul><li>Node.js 与浏览器 API</li><li>TypeScript 类型与 ESM / CommonJS 构建</li><li>A4 页面及自定义页边距</li></ul>
+  <h2>接口一览</h2>
+  <table>
+    <tr><th>接口</th><th>返回类型</th><th>使用场景</th></tr>
+    <tr><td>htmlToDocx</td><td>Uint8Array</td><td>通用字节输出</td></tr>
+    <tr><td>asBlob</td><td>Blob</td><td>浏览器下载</td></tr>
+    <tr><td>asBuffer</td><td>Buffer</td><td>Node.js 写文件</td></tr>
+  </table>
+  <h2>内联图片</h2>
+  <p>下面的 PNG 图片随 DOCX 一起打包：</p>
+  <img alt="内联 PNG" width="48" height="48" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAIAAADajyQQAAABKUlEQVR4nO3UuW0EMRBE0Q2Gac09kxtvMsMVffWHLC0gsRrPZuE7fLnFgwDi8P52bkkggwKq9Xh1SwPd9FKYwhSmMIXNEbZ6EEAcjO01gQwKsMLW6tYGuklhClOYwhQ2SdjmQQBxMLa3BDIowArbqtsa6CaFKUxhClPYJGG7BwHEwdjeE8igACtsr25voJsUpjCFKUxhk4QdHgQQB2P7SCCDAqywo7qjgW5SmMIUpjCFTRJ2ehBAHIztM4EMCrDCzurOBrpJYQr7b2G/egpT2F8OuzwIIA6fDruquxroJoX9FOauBDIowPruFaYwhSnsY2G3BwHEwdi+E8igACvsru5uoJsUpjCFKUxhk4Q9HgQQB2P7SSCDAqywp7qngW5SmMIUpjCFTRH2BepLP0bG1m2tAAAAAElFTkSuQmCC">
+  <p><em>排版由 Word 的 HTML 导入器处理。</em></p>
+</body>
+</html>

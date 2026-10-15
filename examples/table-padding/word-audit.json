@@ -1,0 +1,83 @@
+{
+  "nativeDocument": "padding-release-native.docx",
+  "cells": [
+    {
+      "label": "BG01 · CSS class 背景padding: 4pt",
+      "paddingTwips": {
+        "top": 80,
+        "left": 80,
+        "bottom": 80,
+        "right": 80
+      },
+      "verticalAlign": "center",
+      "paragraphAfterTwips": 0
+    },
+    {
+      "label": "BG02 · 行内 style 背景padding: 4pt",
+      "paddingTwips": {
+        "top": 80,
+        "left": 80,
+        "bottom": 80,
+        "right": 80
+      },
+      "verticalAlign": "center",
+      "paragraphAfterTwips": 0
+    },
+    {
+      "label": "BG03 · td 的 bgcolor 属性padding: 4pt",
+      "paddingTwips": {
+        "top": 80,
+        "left": 80,
+        "bottom": 80,
+        "right": 80
+      },
+      "verticalAlign": "center",
+      "paragraphAfterTwips": 0
+    },
+    {
+      "label": "BG04 · td 同时含 bgcolor 与 stylepadding: 4pt",
+      "paddingTwips": {
+        "top": 80,
+        "left": 80,
+        "bottom": 80,
+        "right": 80
+      },
+      "verticalAlign": "center",
+      "paragraphAfterTwips": 0
+    },
+    {
+      "label": "TOP · 顶部对齐四边 4pt",
+      "paddingTwips": {
+        "top": 80,
+        "left": 80,
+        "bottom": 80,
+        "right": 80
+      },
+      "verticalAlign": "top",
+      "paragraphAfterTwips": 0
+    },
+    {
+      "label": "MIDDLE · 垂直居中四边 4pt",
+      "paddingTwips": {
+        "top": 80,
+        "left": 80,
+        "bottom": 80,
+        "right": 80
+      },
+      "verticalAlign": "center",
+      "paragraphAfterTwips": 0
+    },
+    {
+      "label": "BOTTOM · 底部对齐四边 4pt",
+      "paddingTwips": {
+        "top": 80,
+        "left": 80,
+        "bottom": 80,
+        "right": 80
+      },
+      "verticalAlign": "bottom",
+      "paragraphAfterTwips": 0
+    }
+  ],
+  "status": "passed"
+}

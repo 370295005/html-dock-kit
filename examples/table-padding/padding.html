@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>单元格内边距与垂直对齐</title>
+  <style>
+    body { font-family: Arial, "Microsoft YaHei", sans-serif; color: #172033; font-size: 10pt; }
+    h1 { color: #1d4ed8; font-size: 18pt; margin: 0 0 12pt; }
+    h2 { font-size: 12pt; margin: 16pt 0 8pt; }
+    p { margin: 0 0 8pt; }
+    .class-table { border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 9pt; }
+    .class-table th, .class-table td { border: 1pt solid #94a3b8; padding: 6pt; vertical-align: top; }
+    .small-table { font-size: 8pt; }
+    .small-table td, .small-table th { padding: 4pt; }
+    .background-row { height: 40pt; }
+    .background-row td { vertical-align: middle; }
+    .background-row td p { margin: 0; }
+    .align-row { height: 64pt; }
+    .align-row p { margin: 0; }
+    .purple { color: #6d28d9; background-color: #ede9fe; }
+    .orange { color: #c2410c; background-color: #ffedd5; }
+  </style>
+</head>
+<body>
+  <h1>单元格内边距与垂直对齐</h1>
+  <p>同一份 HTML 同时包含 class-table 与 small-table，后者把四边内边距覆盖为 4pt。</p>
+  <h2>BG · 三种背景设置</h2>
+  <table class="class-table small-table" cellspacing="0" cellpadding="0">
+    <tr class="background-row">
+      <td class="purple"><p>BG01 · CSS class 背景<br>padding: 4pt</p></td>
+      <td style="background-color:#ffedd5;color:#c2410c"><p>BG02 · 行内 style 背景<br>padding: 4pt</p></td>
+    </tr>
+    <tr class="background-row">
+      <td bgcolor="#dbeafe" style="color:#1d4ed8"><p>BG03 · td 的 bgcolor 属性<br>padding: 4pt</p></td>
+      <td bgcolor="#ffe4e6" style="background-color:#ffe4e6;color:#be123c"><p>BG04 · td 同时含 bgcolor 与 style<br>padding: 4pt</p></td>
+    </tr>
+  </table>
+  <h2>对齐规则独立验证</h2>
+  <table class="class-table small-table" cellspacing="0" cellpadding="0">
+    <tr class="align-row">
+      <td style="vertical-align:top;background-color:#f1f5f9"><p>TOP · 顶部对齐<br>四边 4pt</p></td>
+      <td style="vertical-align:middle;background-color:#dcfce7"><p>MIDDLE · 垂直居中<br>四边 4pt</p></td>
+      <td style="vertical-align:bottom;background-color:#fef3c7"><p>BOTTOM · 底部对齐<br>四边 4pt</p></td>
+    </tr>
+  </table>
+  <p style="margin-top:12pt">单元格中的 p 使用 margin: 0，避免段后间距造成视觉偏移。导出器按源 HTML 的 vertical-align 排版。</p>
+</body>
+</html>
